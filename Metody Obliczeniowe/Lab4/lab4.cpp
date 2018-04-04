@@ -63,6 +63,7 @@ double solve(double *value, double TOLX, double TOLF, int iter) {
 				flag = true;
 				break;
 			}
+			
 		if (flag) break;
 		
 		if (fabs(funcValue[0] - f1(value_new[0], value_new[1], value_new[2])) < TOLF)
