@@ -205,13 +205,7 @@ int main(int argc, char** argv) {
 	double X1[4] = {45, 15, -85, -54};
 	double X2[4] = {45, 15, -85, -54};
 	double omega = 0.5;
-	
-	
-	double **A2 = new_matrix(4);
-	for(int i = 0; i< 4; i++)
-		for(int j = 0; j < 4; j++)
-			A2[i][j] = A[i][j];
-		
+			
 	cout << "Jacobi\n";	
 	jacobi_method(A, B, X);
 	print_vector(X);
