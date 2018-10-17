@@ -1,3 +1,5 @@
+package Model;
+
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
@@ -9,10 +11,10 @@ import java.util.List;
 import java.util.Locale;
 
 public class KolekcjaWalut {
-	private List<Waluta> list = new ArrayList<Waluta>();
+	private List<Waluta> list = new ArrayList<>();
 	private int totalWaluty;
 
-	KolekcjaWalut() throws ParserConfigurationException, SAXException, IOException, ParseException {
+	public KolekcjaWalut() throws ParserConfigurationException, SAXException, IOException, ParseException {
 		WebClient client = new WebClient();
 		totalWaluty = client.getTotalWaluty();
 

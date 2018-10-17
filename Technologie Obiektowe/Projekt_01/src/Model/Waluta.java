@@ -1,3 +1,5 @@
+package Model;
+
 public class Waluta {
 	private String kodWaluty;
 	private String nazwaWaluty;

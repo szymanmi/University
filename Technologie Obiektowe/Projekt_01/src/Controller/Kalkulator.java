@@ -1,3 +1,6 @@
+package Controller;
+
+import Model.KolekcjaWalut;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;

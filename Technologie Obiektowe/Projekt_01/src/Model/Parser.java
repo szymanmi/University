@@ -1,3 +1,5 @@
+package Model;
+
 public interface Parser {
 	String[] parseNazwaWaluty();
 	String[] parseKodWaluty();

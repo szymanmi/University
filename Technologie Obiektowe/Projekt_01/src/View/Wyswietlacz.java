@@ -1,3 +1,9 @@
+package View;
+
+import Controller.Kalkulator;
+import Model.Spr;
+import Model.SprTxt;
+import Model.Waluta;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
