@@ -16,12 +16,12 @@ public class Wyswietlacz {
 		Scanner scanner = new Scanner(System.in);
 		Spr sprawdzacz = new SprTxt();
 		do{
-			System.out.println("podaj kod1");
+			System.out.println("podaj kod pierwszej waluty");
 			kod1 = scanner.next();
 		}while(!sprawdzacz.sprawdz(kalkulator.getAll(), kod1));
 
 		do{
-			System.out.println("podaj kod2");
+			System.out.println("podaj kod drugiej waluty");
 			kod2 = scanner.next();
 		}while(!sprawdzacz.sprawdz(kalkulator.getAll(), kod2));
 
@@ -34,7 +34,7 @@ public class Wyswietlacz {
 	private void showAll(){
 		for(Waluta w : kalkulator.getAll().getAll()) {
 			System.out.println(w.getNazwaWaluty());
-			System.out.println(w.getKursSredni());
+			System.out.println(w.getKodWaluty());
 			System.out.println();
 		}
 	}
