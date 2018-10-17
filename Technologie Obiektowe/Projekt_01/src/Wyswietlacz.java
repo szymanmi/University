@@ -8,10 +8,10 @@ import java.util.Scanner;
 public class Wyswietlacz {
 	private Kalkulator kalkulator = new Kalkulator();
 
-	private Wyswietlacz() throws ParserConfigurationException, SAXException, ParseException, IOException {
+	public Wyswietlacz() throws ParserConfigurationException, SAXException, ParseException, IOException {
 	}
 
-	private void calculate() {
+	public void calculate() {
 		String kod1, kod2;
 		Scanner scanner = new Scanner(System.in);
 		Spr sprawdzacz = new SprTxt();
@@ -31,7 +31,7 @@ public class Wyswietlacz {
 		System.out.println(kalkulator.przelicz(kod1, kod2, val));
 	}
 
-	private void showAll(){
+	public void showAll(){
 		for(Waluta w : kalkulator.getAll().getAll()) {
 			System.out.println(w.getNazwaWaluty());
 			System.out.println(w.getKodWaluty());
@@ -39,11 +39,6 @@ public class Wyswietlacz {
 		}
 	}
 
-	public static void main(String[] args) throws ParserConfigurationException, SAXException, ParseException, IOException {
-		Wyswietlacz wyswietlacz = new Wyswietlacz();
-		wyswietlacz.showAll();
-		wyswietlacz.calculate();
-	}
 }
 
 
