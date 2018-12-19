@@ -10,7 +10,7 @@ public class Context {
 
 
 	public Context() {
-		currentSort = new BubbleSort();
+		currentSort = new QuickSort();
 	}
 
 
